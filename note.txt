@@ -1,0 +1,4 @@
+Le worker n'arrive pas a se connecter au postgres sql car dans les logs du container postgres, la connection ne se fait pas sur le user 'postgres' car il n'existe pas alors que c'est censé
+être l'utilisateur par défaut quand la variable POSTGRES_USER n'est pas défini dans le docker compose. Je ne sais pas si il arrive a se connecter au redis mais je pense que oui à retester.
+
+L'app node n'arrive pas a se connecter au postgres certainement pour les mêmes raison que le worker mais je ne m'y suis pas pencher donc a voir quand le worker sera réparé.
