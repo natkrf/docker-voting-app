@@ -32,7 +32,6 @@ services:
 
   redis:
     image: redis:latest
-    container_name: redis
     networks:
       - voteNetwork
       - workerNetwork
